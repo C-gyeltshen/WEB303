@@ -18,7 +18,7 @@
 
    You should see the installed version of Go.
 
-   ![2](../Practical1/assets/2.png)
+   ![2](../Practical1/images/2.png)
 
    ```bash
    go env
@@ -50,7 +50,7 @@
 
    You should see the version of Protocol Buffers installed.
 
-   ![1](../Practical1/assets/1.png)
+   ![1](../Practical1/images/1.png)
 
 3. **Install Go Plugins**: These tools generate Go code from .proto files. Run the following in your terminal:
 
@@ -59,7 +59,7 @@
     go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2
     ```
 
-    ![3](..//Practical1/assets/3.png)
+    ![3](..//Practical1/images/3.png)
 
 ### 1.3: Installing and Verifying Docker
 
@@ -72,8 +72,8 @@
 
    You should see the installed version of Docker.
 
-   ![4](../Practical1/assets/4.png)
-   ![5](../Practical1/assets/5.png)
+   ![4](../Practical1/images/4.png)
+   ![5](../Practical1/images/5.png)
 
 ## Part 2: Building and Orchestrating Communicating Microservices (Duration: 1 Hour)
 
@@ -91,7 +91,7 @@
     mkdir greeter-service
     mkdir time-service
     ```
-    ![6](../Practical1/assets/6.png)
+    ![6](../Practical1/images/6.png)
 
 2. **Define the Time Service (proto/time.proto):** This service returns the current time.
 
@@ -143,7 +143,7 @@
     proto/*.proto
     ```
 
-    ![7](../Practical1/assets/7.png)
+    ![7](../Practical1/images/7.png)
 
 ### 2.2: Implementing the Microservices in Go
 
@@ -159,15 +159,15 @@
     ```bash
     go mod init practical-one/time-service
     ```
-    ![8](../Practical1/assets/8.png)
-    ![9](../Practical1/assets/9.png)
+    ![8](../Practical1/images/8.png)
+    ![9](../Practical1/images/9.png)
 
 - **Get dependencies:**
 
     ```bash
     go get google.golang.org/grpc
     ```
-    ![10](../Practical1/assets/10.png)
+    ![10](../Practical1/images/10.png)
 
 - **Create main.go with the following code:**
 
@@ -295,7 +295,3 @@
     ```
 
     This command builds and starts both services.
-
-
-
-#### ew 
